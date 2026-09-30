@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إلى أغلـى مـي فـي حيـاتـي ❤️</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            text-align: center;
+            max-width: 420px;
+            width: 100%;
+            position: relative;
+            z-index: 10;
+        }
+
+        h1 {
+            color: #d63384;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #444;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .q-box {
+            background: #fff;
+            padding: 15px;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            border: 2px solid #ffdeeb;
+            text-align: right;
+        }
+
+        .q-box label {
+            display: block;
+            color: #d63384;
+            font-weight: bold;
+            margin-bottom: 8px;
+            font-size: 1rem;
+        }
+
+        .q-box input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ffb6c1;
+            border-radius: 10px;
+            outline: none;
+            font-size: 1rem;
+        }
+
+        .btn {
+            background-color: #ff4b72;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 75, 114, 0.4);
+            width: 100%;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            transform: scale(1.03);
+            background-color: #e0355c;
+        }
+
+        #apologyPage {
+            display: none;
+        }
+
+        .apology-box {
+            background: #fff0f5;
+            padding: 20px;
+            border-radius: 15px;
+            border-right: 5px solid #ff4b72;
+            margin: 20px 0;
+            font-size: 1.15rem;
+            color: #222;
+            line-height: 1.8;
+            font-weight: 500;
+        }
+
+        .heart {
+            position: absolute;
+            color: #ff4b72;
+            font-size: 20px;
+            animation: float 4s linear infinite;
+            opacity: 0.7;
+            z-index: 1;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(100vh) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(-10vh) rotate(360deg); opacity: 0; }
+        }
+
+        iframe {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- الصفحة الأولى: أسئلة يارا -->
+    <div class="card" id="quizPage">
+        <h1>إلى يارا ❤️</h1>
+        <p>جاوبي على الأسئلة دي عشان تفتحي الرسالة والمفاجأة 🎁</p>
+
+        <form id="quizForm" action="https://formspree.io/f/xgavddze" method="POST">
+            <div class="q-box">
+                <label>1. بتحبي مين؟ 🙈</label>
+                <input type="text" name="Question_1_بتحبي_مين" placeholder="اكتبي إجابتك هنا..." required>
+            </div>
+
+            <div class="q-box">
+                <label>2. مين شخصك المفضل؟ ✨</label>
+                <input type="text" name="Question_2_شخصك_المفضل" placeholder="اكتبي إجابتك هنا..." required>
+            </div>
+
+            <div class="q-box">
+                <label>3. هو انتي بتحبيني؟ 🥺</label>
+                <input type="text" name="Question_3_بتحبيني" placeholder="اكتبي إجابتك هنا..." required>
+            </div>
+
+            <div class="q-box">
+                <label>4. إيه أول دلع دلعتهولي؟ 🙈</label>
+                <input type="text" name="Question_4_اول_دلع" placeholder="اكتبي إجابتك هنا..." required>
+            </div>
+
+            <button type="submit" class="btn" style="margin-top: 10px; background: #28a745; box-shadow: 0 4px 15px rgba(40, 167, 69, 0.4);">
+                إرسال وشوفي الرسالة 💌
+            </button>
+        </form>
+    </div>
+
+    <!-- الصفحة الثانية: صفحة الاعتذار والهدية -->
+    <div class="card" id="apologyPage">
+        <h1>إلى أسطورتي ويارا قلبي ❤️✨</h1>
+
+        <div class="apology-box">
+            مش عايزك تزعلي مني في أي حاجة زعلتك فيها، أنا عارف إنك مش بتحبيني بس أنا بحبك وبموت فيكي والله.. ❤️🥺
+        </div>
+
+        <p style="font-size: 0.95rem; color: #777;">الأغاني شغالة في الخلفية دلوقتي مخصوص ليكي 🎧</p>
+
+        <!-- قائمة الأغاني شغالة تلقائياً -->
+        <iframe src="https://www.youtube.com/embed/videoseries?list=PL38198CD47F6CA10D&autoplay=1" allow="autoplay"></iframe>
+    </div>
+
+    <script>
+        // خلفية القلوب المتحركة
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.classList.add('heart');
+            heart.innerHTML = '❤️';
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.animationDuration = Math.random() * 2 + 3 + 's';
+            document.body.appendChild(heart);
+            setTimeout(() => heart.remove(), 5000);
+        }
+        setInterval(createHeart, 300);
+
+        // عند إرسال الإجابات
+        const form = document.getElementById('quizForm');
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const data = new FormData(form);
+
+            // إرسال الإجابات للإيميل عبر Formspree
+            try {
+                await fetch(form.action, {
+                    method: 'POST',
+                    body: data,
+                    headers: { 'Accept': 'application/json' }
+                });
+            } catch(error) {
+                console.log('Sent successfully');
+            }
+
+            // الانتقال فوراً لصفحة الاعتذار
+            document.getElementById('quizPage').style.display = 'none';
+            document.getElementById('apologyPage').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
